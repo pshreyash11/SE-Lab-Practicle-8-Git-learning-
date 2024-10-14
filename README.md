@@ -1,0 +1,2 @@
+# SE-Lab-Practicle-8-Git-learning-
+Basic Todo list application made with HTML, CSS, JS .
