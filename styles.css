@@ -57,9 +57,12 @@ li.completed {
 
 .delete-btn {
     background-color: #dc3545;
+    text-align: center;
     color: white;
     border: none;
     border-radius: 5px;
+    margin-left: 10px;
+    width: 70px;
 }
 
 .delete-btn:hover {
