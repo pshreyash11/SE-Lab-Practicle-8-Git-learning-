@@ -61,3 +61,11 @@ li.completed {
     border: none;
     border-radius: 5px;
 }
+
+.delete-btn:hover {
+    background-color: #c82333; 
+}
+
+.delete-btn:active {
+    background-color: #bd2130; 
+}
