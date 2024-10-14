@@ -1,5 +1,12 @@
 document.getElementById('addTaskBtn').addEventListener('click', addTask);
 
+// Listen for Enter key press on the task input field
+document.getElementById('taskInput').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});
+
 function addTask() {
     const taskInput = document.getElementById('taskInput');
     
