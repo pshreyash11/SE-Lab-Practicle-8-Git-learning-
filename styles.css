@@ -63,6 +63,7 @@ li.completed {
     border-radius: 5px;
     margin-left: 10px;
     width: 70px;
+    flex-shrink: 5;
 }
 
 .delete-btn:hover {
