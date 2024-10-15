@@ -24,6 +24,13 @@ input[type="text"] {
     margin-bottom: 10px;
 }
 
+li span {
+    flex-grow: 1; /* Allow the task text to take the available space */
+    margin-right: 10px; /* Add some space between the text and the delete button */
+    word-wrap: break-word;
+    max-width: calc(100% - 90px); /* Ensure text doesn't push the button */
+}
+
 button {
     width: 100%;
     padding: 10px;
