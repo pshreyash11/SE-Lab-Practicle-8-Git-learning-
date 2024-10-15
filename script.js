@@ -17,7 +17,8 @@ function addTask() {
 
     const li = document.createElement('li');
     
-    li.textContent = taskInput.value;
+    const taskText = document.createElement('span');
+    taskText.textContent = taskInput.value;
 
     // Create a delete button
     const deleteBtn = document.createElement('button');
@@ -29,14 +30,14 @@ function addTask() {
         li.remove();
     });
 
-   // Add event listener to mark task as completed
-   li.addEventListener('click', function() {
-       li.classList.toggle('completed');
-   });
-
-   li.appendChild(deleteBtn);
-   document.getElementById('taskList').appendChild(li);
+    // Add event listener to mark task as completed
+    li.addEventListener('click', function() {
+        li.classList.toggle('completed');
+    });
+    li.appendChild(taskText);
+    li.appendChild(deleteBtn);
+    document.getElementById('taskList').appendChild(li);
    
-   // Clear the input field after adding the task
-   taskInput.value = '';
+    // Clear the input field after adding the task
+    taskInput.value = '';
 }
